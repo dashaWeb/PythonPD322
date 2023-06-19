@@ -90,3 +90,67 @@
 #         print("Error password")
 # else:
 #     print("Error login")
+
+# day = int(input("Enter number day"))
+# if day == 1:
+#     print("m")
+# elif day == 2:
+#     print("tu")
+# elif day == 3:
+#     print("tu")
+# elif day == 4:
+#     print("tu")
+# elif day == 5:
+#     print("tu")
+# day = int(input("Enter number day"))
+# match day%7:
+#     case 1:
+#         print("M")
+#     case 2:
+#         print("tu")
+#     case 3:
+#         print("tu")
+#     case 4:
+#         print("tu")
+#     case 5:
+#         print("tu")
+#     case _:
+#         print("error")
+
+# 28.02.2004 -> 29.02.2004
+# 28.02.2005 -> 01.03.2005
+# 31.03.2005 -> 01.04.2005
+# 31.12.2005 -> 01.01.2006
+
+# day = 31
+# month = 12
+# year = 2005
+# print("{}.{}.{}".format(day,month,year))
+# fullDay = 0
+# # знаходимо кількість днів поточного місяця
+# if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
+#     fullDay = 31
+# elif month == 4 or month == 6 or month == 9 or month == 11:
+#     fullDay = 30
+# elif month == 2:
+#     if year % 4 == 0 or year % 400 == 0 and year % 100 != 0:
+#         fullDay = 29
+#     else:
+#         fullDay = 28
+
+# day +=1
+# if day > fullDay:
+#     day = 1
+#     month+=1
+
+# if month > 12:
+#     month = 1
+#     year +=1
+
+# print("{}.{}.{}".format(day,month,year))
+
+
+    
+
+
+

@@ -311,11 +311,12 @@ else:
 
 
 line_2 = '***Lorem 21 Hello'
-print(line_2, " --> ", re.search(r'[^*]', line_2))
+print(line_2, " --> ", re.search(r'\w+', line_2).group(0))
 print(line_2, " --> ", re.findall(r'\w+', line_2))
-
-match = re.search(r'[^*]', line_2)
-print(match.group(0))
+test = re.findall(r'\w+', line_2)
+print(len(test))
+for item in test:
+    print(item)
 
 
 # print(line, " --> ", re.sub(r'[^m]{5}', 'blue', line))

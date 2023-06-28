@@ -67,7 +67,8 @@ print("\t\t Rock Paper Scissors")
 user = 0
 bot = 0
 
-
+win_bot = 0
+win_user = 0
 
 while True:
     user_score = 0
@@ -75,7 +76,8 @@ while True:
     for item in range(3):
         print("\n\n------------ Round # {} -------------".format(item + 1))
         while True:
-            user = input("\t [r] - rock; \n\t [p] - paper; \n\t [s] - scissors; \n\t Enter your choose :: ")
+            user = input(
+                "\t [r] - rock; \n\t [p] - paper; \n\t [s] - scissors; \n\t Enter your choose :: ")
             user = user.lower()
             if user == 'r' or user == 'p' or user == 's':
                 break
@@ -83,16 +85,18 @@ while True:
                 print("Error. Enter true choose")
         bot = random.choice('rps')
         print("\t\t Bot \t User")
-        print("\t\t [{}] \t [{}] ".format(bot,user))
+        print("\t\t [{}] \t [{}] ".format(bot, user))
         if user == 'r' and bot == 's' or user == 'p' and bot == 'r' or user == 's' and bot == 'p':
-            user_score+=1
+            user_score += 1
         elif bot == 'r' and user == 's' or bot == 'p' and user == 'r' or bot == 's' and user == 'p':
-            bot_score+=1
+            bot_score += 1
 
     if user_score > bot_score:
         print("\n\t=============== Congratulation!!!! You won !!!! ======================")
+        win_user += 1
     elif bot_score > user_score:
         print("\n\t================= Sorry!!!! You Loser !!!! =========================")
+        win_bot += 1
     else:
         print("\n\t=================== Draw ==========================")
 
@@ -106,12 +110,10 @@ while True:
     if user == 'n':
         break
 
-
+print()
 # Розширити гру -- Додати нові варіанти + спок, ящірка
 # Збільшити кількість раундів до 5
 # При виході з гри -- показати статистику ігор
 # Bot win  :: 5
 # User win :: 10
-# Draw     :: 2 
-
-
+# Draw     :: 2

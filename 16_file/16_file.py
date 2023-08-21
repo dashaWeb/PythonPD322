@@ -86,11 +86,12 @@ url = '16_file/text.txt'
 
 # writeFile(url2,newText)
  
-number_1 = [11,15,16,25,48,22]
+# number_1 = [11,15,16,25,48,22]
 
-with open('16_file/number.txt','w') as file:
-    newNumber = []
-    for i in number_1:
-        newNumber.append(str(i))
-    file.write(' '.join(newNumber))
-   
+# with open('16_file/number.txt','w') as file:
+#     newNumber = []
+#     for i in number_1:
+#         newNumber.append(str(i))
+#     file.write(' '.join(newNumber))
+
+str = '''[{"ccy":"EUR","base_ccy":"UAH","buy":"40.80000","sale":"41.80000"},{"ccy":"USD","base_ccy":"UAH","buy":"37.35000","sale":"38.05000"}]'''

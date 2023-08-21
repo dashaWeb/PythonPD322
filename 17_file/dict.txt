@@ -1,0 +1,1 @@
+{'name': 'Valeria', 'lastname': 'Dokukina', 'rating': 11.9, 'group': 'F31', 'birthdate': '20.01.05', 'email': 'lera2005olex@gmail.com', 'phone': '+380639290342'}
